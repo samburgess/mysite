@@ -15,7 +15,7 @@ function App() {
       {/*ensure correct routing under deployment*/}
       <Router basename={`${process.env.PUBLIC_URL}/`}>
           <Link to='/' className="dothing">
-            <h1>Samuel Burgess</h1>
+            <h1>Samuel C. Burgess</h1>
           </Link>
           <Nav />
           <Switch>
@@ -30,8 +30,8 @@ function App() {
           <div className="App-contacts">
             <div>
             saburgess239@gmail.com
-            <CopyToClipboard text="saburgess239@gmail.com" onCopy={()=>console.log("copied email\n")}>
-              <button className="App-clear"><img src={clipboard} height="30px" width="25px"/></button>
+            <CopyToClipboard className="App-clear" text="saburgess239@gmail.com" onCopy={()=>console.log("copied email\n")}>
+              <button ><img src={clipboard} height="30px" width="25px"/></button>
             </CopyToClipboard>
             </div>
             +1 (425) 829-5203
@@ -45,7 +45,6 @@ function App() {
 const Home = () => (
   <div>
     <img src={gif} className="App-logo" alt="logo" />
-    {/* <h1 className="dothing">Home page</h1> */}
   </div>
 
 );

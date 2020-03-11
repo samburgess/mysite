@@ -7,6 +7,7 @@
   justify-content: space-evenly;
   font-size: 34px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 5px;
 }
 
 .App:link{
@@ -14,6 +15,13 @@
 }
 .App:visited{
   text-decoration: none;
+}
+
+.About{
+  color: #ffffff;
+  overflow-y: scroll;
+  text-align: left;
+  text-indent: 20vh;
 }
 
 .Links{
@@ -31,6 +39,10 @@
   background: none;
   padding-left: 10px;
   padding-right: 80px;
+}
+
+.App-clear:hover{
+  filter: invert(90%);
 }
 
 .App-logo {
