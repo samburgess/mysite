@@ -24,6 +24,18 @@
   text-indent: 20vh;
 }
 
+.Project{
+  color: #ffffff;
+  text-align: left;
+  background-color: rgb(47, 47, 47);
+  padding: 3vh;
+  border-style: double;
+}
+
+.Project-list{
+  overflow-y: scroll;
+}
+
 .Links{
   display: flex;
   flex-direction: row;

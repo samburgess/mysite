@@ -3,7 +3,13 @@ import './App.css';
 import {Link, BrowserRouter as Router} from 'react-router-dom';
 
 
+//list of projectData
+var projects = [];
+var generated = false;
+
 function genProjects(){
+
+    console.log("gen projects")
 
     //dirtbag
     var dirtbag = {
@@ -26,22 +32,12 @@ function genProjects(){
 
     projects.push(webtech)
 
+    generated = true;
 
 
 }
 
-
-
-//list of projectData
-var projects = [];
-
-
-function ProjectHolder(){
-
-
-}
-
-class Project extends React.Component(){
+class Project extends React.Component{
 
     constructor(props){
         super(props);
@@ -49,19 +45,46 @@ class Project extends React.Component(){
 
     render(){
         return(
-            <div>
+            <div className="Project">
                 <Router>
                     <h1>{this.props.title}</h1>
-                    <Link to='{this.props.pages_link}s'>
-                    {this.props.pages_link}
-                    {this.props.source_link}
+                    <Link to ={this.props.source_link}>
+                        {this.props.source_link}
+                    </Link>
+                    <Link to={this.props.pages_link}>
+                        {this.props.pages_link}
+                    </Link>
                 </Router>
+                <h2>{this.props.technologies}</h2>
                 <div>{this.props.description}</div>
             </div>
     )}
 
 }
 
-function Projects(){
+export default function Projects(){
 
+    console.log("projects")
+
+    if(!generated){
+        genProjects()
+    }
+
+    let projectList = projects.map((p) => 
+    
+        <Project 
+            key={p.title}
+            title={p.title}
+            description={p.description}
+            technologies={p.technologies}
+            source_link={p.source_link}
+            pages_link={p.pages_link}
+        />
+    )
+
+    return(
+        <ul className="Project-list">
+            {projectList}
+        </ul>
+    )
 }
