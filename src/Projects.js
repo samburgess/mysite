@@ -11,6 +11,16 @@ function genProjects(){
 
     console.log("gen projects")
 
+    var covidmap = {
+        title:'Covid 19 Visualisation',
+        description: "React app implementing Google's heatmap API. Powered by a Node.js server, using data from the New York Times (github.com/ny-times/Covid-19-data)",
+        technologies: 'JavaScript, React.js, Node.js, Google Cloud Engine',
+        pages_link: 'samburgess.github.io/covid_client',
+        source_link: 'github.com/samburgess/covid_client'
+    }
+
+    projects.push(covidmap)
+
     //dirtbag
     var dirtbag = {
         title:'Dirtbag',
