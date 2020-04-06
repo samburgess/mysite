@@ -15,7 +15,7 @@ function Nav(){
                     <h2>Github</h2>
                 </Link>
                 <Link to={'/projects'} className="dothing">
-                    <h2>projects</h2>
+                    <h2>Projects</h2>
                 </Link>
             </ul>    
         </nav>
