@@ -15,7 +15,7 @@ function genProjects(){
         title:'Covid 19 Visualisation',
         description: "React app implementing Google's heatmap API. Powered by a Node.js server, using data from the New York Times (github.com/ny-times/Covid-19-data)",
         technologies: 'JavaScript, React.js, Node.js, Google Cloud Engine',
-        pages_link: 'samburgess.github.io/covid_client',
+        pages_link: '../covid_client',
         source_link: 'github.com/samburgess/covid_client'
     }
 
@@ -58,10 +58,10 @@ class Project extends React.Component{
             <div className="Project">
                 <Router>
                     <h1>{this.props.title}</h1>
-                    <Link to ={this.props.source_link}>
+                    <Link to = {this.props.source_link}>
                         {this.props.source_link}
                     </Link>
-                    <Link to={this.props.pages_link}>
+                    <Link to = {this.props.pages_link}>
                         {this.props.pages_link}
                     </Link>
                 </Router>
