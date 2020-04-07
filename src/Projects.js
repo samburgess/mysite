@@ -15,8 +15,8 @@ function genProjects(){
         title:'Covid 19 Visualisation',
         description: "React app implementing Google's heatmap API. Powered by a Node.js server, using data from the New York Times (github.com/ny-times/Covid-19-data)",
         technologies: 'JavaScript, React.js, Node.js, Google Cloud Engine',
-        pages_link: '../covidmap_client/',
-        source_link: 'github.com/samburgess/covid_client'
+        pages_link: 'https://samburgess.github.io/covidmap_client',
+        source_link: 'https://github.com/samburgess/covidmap_client/'
     }
 
     projects.push(covidmap)
@@ -24,10 +24,10 @@ function genProjects(){
     //dirtbag
     var dirtbag = {
         title:'Dirtbag',
-        description:'React app utilizing REI`s Mountain Project API to find climbing routes near the user`s geolocation.',
+        description:"React app utilizing REI's Mountain Project API to find climbing routes near the user`s geolocation.",
         technologies:'JavaScript, React.js',
         pages_link: '',
-        source_link: 'github.com/samburgess/dirtbag'
+        source_link: 'https://github.com/samburgess/dirtbag'
     }
 
     projects.push(dirtbag)
@@ -54,18 +54,15 @@ class Project extends React.Component{
     }
 
     render(){
-        console.log("route update**")
         return(
             <div className="Project">
-                <Router>
-                    <h1>{this.props.title}</h1>
-                    <Link to = {this.props.source_link}>
-                        {this.props.source_link}
-                    </Link>
-                    <Link to = {this.props.pages_link} onClick={(event) => {event.preventDefault(); window.open(this.makeHref(this.props.pages_link));}}>
-                        View Project on Github Pages
-                    </Link>
-                </Router>
+                <h1>{this.props.title}</h1>
+                <a target="_blank" href={this.props.source_link} className="Project-link">
+                    View Source on Github >
+                </a>
+                <a target="_blank" href={this.props.pages_link} className="Project-link">
+                    View on Github Pages >
+                </a>
                 <h2>{this.props.technologies}</h2>
                 <div>{this.props.description}</div>
             </div>

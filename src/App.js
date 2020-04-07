@@ -25,8 +25,8 @@ function App() {
                 window.location.href = 'https://github.com/samburgess'; 
                 return null;
             }}/>
-            <Route path='/covidmap_client/' component={() => { 
-                window.location.href = 'https://github.com/samburgess'; 
+            <Route path='/covidmap_client' component={() => { 
+                window.location.href = 'https://samburgess.github.io/covidmap_client/'; 
                 return null;
             }}/>
             <Route exact path={`/projects`} component={Projects}/>

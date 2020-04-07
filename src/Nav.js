@@ -9,11 +9,14 @@ function Nav(){
         <nav>
             <ul className="Links">
                 <Link to={`/about`} className="dothing">
-                    <h2>About</h2>
+                    <h2>About Me</h2>
                     </Link>
-                <Link to={'/github'} className="dothing">
+                {/* <Link to={'/github'} className="dothing">
                     <h2>Github</h2>
-                </Link>
+                </Link> */}
+                <a target="_blank" href="https://github.com/samburgess/" className="GhLink">
+                    Github
+                </a>
                 <Link to={'/projects'} className="dothing">
                     <h2>Projects</h2>
                 </Link>

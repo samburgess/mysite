@@ -25,11 +25,30 @@
 }
 
 .Project{
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
   text-align: left;
   background-color: rgb(47, 47, 47);
   padding: 3vh;
   border-style: double;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+
+.Project-link{
+  color: #ffffff;
+  text-decoration: none;
+  border: rgb(168, 240, 236);
+  border-style: double;
+  border-right: none;
+  border-top: none;
+  margin: 20px;
+  padding: 10px;
+}
+
+.Project-link:hover{
+  color:rgb(168, 240, 236);
 }
 
 .Project-list{
@@ -44,6 +63,20 @@
   border-bottom: #ffffff;
   border-style: double;
   font-size: 20px;
+}
+
+.GhLink{
+  text-decoration: none;
+  color: #ffffff;
+  align-self: center;
+  font-size: 34px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 550;
+  letter-spacing: 5px;
+}
+
+.GhLink:hover{
+  color:rgb(168, 240, 236);
 }
 
 .App-clear{
