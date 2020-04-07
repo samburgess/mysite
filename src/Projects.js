@@ -54,6 +54,7 @@ class Project extends React.Component{
     }
 
     render(){
+        console.log("route update**")
         return(
             <div className="Project">
                 <Router>
@@ -61,7 +62,7 @@ class Project extends React.Component{
                     <Link to = {this.props.source_link}>
                         {this.props.source_link}
                     </Link>
-                    <Link to = {this.props.pages_link}>
+                    <Link to = {this.props.pages_link} onClick={(event) => {event.preventDefault(); window.open(this.makeHref(this.props.pages_link));}}>
                         View Project on Github Pages
                     </Link>
                 </Router>
