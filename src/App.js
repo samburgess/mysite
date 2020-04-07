@@ -15,7 +15,7 @@ function App() {
       {/*ensure correct routing under deployment*/}
       <Router basename={`${process.env.PUBLIC_URL}/`}>
           <Link to='/' className="dothing">
-            <h1>Samuel C. Burgess</h1>
+            <h1 className="Header">Samuel C. Burgess</h1>
           </Link>
           <Nav />
           <Switch>

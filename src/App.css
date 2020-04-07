@@ -22,6 +22,7 @@
   overflow-y: scroll;
   text-align: left;
   text-indent: 20vh;
+  padding-left: 5vh;
 }
 
 .Project{
@@ -53,6 +54,10 @@
 
 .Project-list{
   overflow-y: scroll;
+}
+
+.Header{
+  height: 1vh;
 }
 
 .Links{
