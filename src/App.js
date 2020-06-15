@@ -14,8 +14,8 @@ function App() {
     <div className="App">
       {/*ensure correct routing under deployment*/}
       <Router basename={`${process.env.PUBLIC_URL}/`}>
-          <Link to='/' className="dothing">
-            <h1 className="Header">Samuel C. Burgess</h1>
+          <Link to='/' className="Header">
+            <h1 className="dothing" >Samuel C. Burgess</h1>
           </Link>
           <Nav />
           <Switch>
