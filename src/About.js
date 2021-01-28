@@ -7,7 +7,7 @@ function About(){
         <div className="About">
             <h1>About Me</h1>
             <div style={{letterSpacing:'0px'}}>
-            Hi! My name is Sam, I am a soon-to-graduate Computer Science student at
+            Hi! My name is Sam, I am a Computer Science Graduate student from
             Western Washington University in Bellingham, WA.
             I am incredibly passionate about creatively designing software,
             particularly Deep Learning and web-based technologies. 
