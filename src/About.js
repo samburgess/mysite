@@ -9,8 +9,7 @@ function About(){
             <div style={{letterSpacing:'0px'}}>
             Hi! My name is Sam, I am a Computer Science Graduate student from
             Western Washington University in Bellingham, WA.
-            I am incredibly passionate about creatively designing software,
-            particularly Deep Learning and web-based technologies. 
+            testesttesttestteest
             On this website you can find some examples of my work,
             some of which can be loaded in the browser.
             Feel free to reach out and ask about any other projects!
