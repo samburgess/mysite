@@ -22,7 +22,10 @@
   overflow-y: scroll;
   text-align: left;
   text-indent: 20vh;
-  padding-left: 5vh;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  padding-bottom: 10vh;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .Project{
